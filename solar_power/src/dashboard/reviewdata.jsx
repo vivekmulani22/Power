@@ -13,7 +13,7 @@ const ReviewData = () => {
 
     const getAllReviews = async () => {
         try {
-            const response = await fetch(`${import.meta.env.VITE_SERVER_URL}admin/reviews`, {
+            const response = await fetch(`${import.meta.env.VITE_SERVER_URL}/admin/reviews`, {
                 method: "GET",
                 headers: {
                     'Authorization': `Bearer ${AuthorizationToken}`,

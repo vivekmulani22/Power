@@ -24,7 +24,7 @@ function ReviewSystem() {
   const fetchReviews = async () => {
     try {
       setIsLoading(true);
-      const response = await fetch(`${import.meta.env.VITE_SERVER_URL}review/get`);
+      const response = await fetch(`${import.meta.env.VITE_SERVER_URL}/review/get`);
       if (!response.ok) {
         throw new Error("Failed to fetch reviews");
       }
@@ -57,7 +57,7 @@ function ReviewSystem() {
     }
 
     try {
-      const response = await fetch(`${import.meta.env.VITE_SERVER_URL}review/add`, {
+      const response = await fetch(`${import.meta.env.VITE_SERVER_URL}/review/add`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

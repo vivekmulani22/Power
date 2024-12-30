@@ -83,7 +83,7 @@ function ContactUs() {
         phone: formData.phone.replace(/\D/g, '')
       };
 
-      const response = await fetch(`${import.meta.env.VITE_SERVER_URL}form/contact`, {
+      const response = await fetch(`${import.meta.env.VITE_SERVER_URL}/form/contact`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

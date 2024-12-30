@@ -13,7 +13,7 @@ const UserData = () => {
 
     const getAllUsers = async () => {
         try {
-            const response = await fetch(`${import.meta.env.VITE_SERVER_URL}admin/users`, {
+            const response = await fetch(`${import.meta.env.VITE_SERVER_URL}/admin/users`, {
                 method: "GET",
                 headers: {
                     Authorization: AuthorizationToken,
