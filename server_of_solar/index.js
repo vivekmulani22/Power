@@ -26,6 +26,10 @@ app.use('/api/admin', adminRouter);
 app.use(errorMiddleware);
 app.use(loginErrorMiddleware);
 
+app.get('/', (req, res) => {
+    res.send('Hello Power of Solar');
+});
+
 // Start server
 const PORT = 3000;
 connectDB().then(() => {
