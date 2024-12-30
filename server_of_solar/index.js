@@ -10,7 +10,7 @@ const reviewRouter = require('./router/review-router');
 const adminRouter = require('./router/admin-router');
 
 const corsOptions = {
-    origin: 'http://localhost:5173',
+    origin: process.env.CLIENT_URL,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'HEAD'],
     credentials: true
 };
