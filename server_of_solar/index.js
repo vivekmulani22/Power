@@ -18,10 +18,10 @@ const corsOptions = {
 app.use(cors(corsOptions));
 app.use(express.json());
 // Routes
-app.use('/api/auth', authRouter);
-app.use('/api/form', contactRouter);
-app.use('/api/review', reviewRouter);
-app.use('/api/admin', adminRouter);
+app.use('/auth', authRouter);
+app.use('/form', contactRouter);
+app.use('/review', reviewRouter);
+app.use('/admin', adminRouter);
 // Error handling middleware
 app.use(errorMiddleware);
 app.use(loginErrorMiddleware);
