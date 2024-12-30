@@ -13,7 +13,7 @@ const ContactData = () => {
 
     const getAllContacts = async () => {
         try {
-            const response = await fetch(`${import.meta.env.VITE_SERVER_URL}/admin/contacts`, {
+            const response = await fetch(`${import.meta.env.VITE_SERVER_URL}admin/contacts`, {
                 method: "GET",
                 headers: {
                     Authorization: AuthorizationToken,

@@ -28,7 +28,7 @@ export const AuthProvider = ({ children }) => {
         try {
             if (!token) return;
 
-            const response = await axios.get(`${import.meta.env.VITE_SERVER_URL}/auth/user`, {
+            const response = await axios.get(`${import.meta.env.VITE_SERVER_URL}auth/user`, {
                 headers: {
                     Authorization: AuthorizationToken,
                 }
