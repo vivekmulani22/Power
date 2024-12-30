@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: 'JosefinSans';
+}
+body{
+  background-color: #000;
+}
+
+#type::-webkit-scrollbar{
+  display: none;
+}
+
+@font-face {
+  font-family: 'JosefinSans';
+  src: url('./fonts/JosefinSans-MediumItalic.ttf') format('truetype'),
+       url('./fonts/JosefinSans-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'FacultyGlyphic';
+  src: url('./fonts/FacultyGlyphic-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'PlayfairDisplay';
+  src: url('./fonts/PlayfairDisplay-VariableFont_wght.ttf') format('truetype'),
+       url('./fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Rubik';
+  src: url('./fonts/Rubik-Italic-VariableFont_wght.ttf') format('truetype'),
+       url('./fonts/Rubik-VariableFont_wght.ttf') format('truetype');
+}
